@@ -1,0 +1,32 @@
+FALTA: que al dar clic en un boton me cambie las categorias de la data xxxxxxxxx
+
+DEPENDENCIAS:
+    npm i react-router-dom
+    npm install --save bootstrap
+     - - - - - - - - - 
+    import 'bootstrap/dist/css/bootstrap.css';
+  
+
+Hay 3 formas de buscar y encontrar películas, programas de televisión y personas en TMDB. Se describen a continuación.
+
+    /search- La búsqueda basada en texto es la forma más común. Usted proporciona una cadena de consulta y nosotros proporcionamos
+    la coincidencia más cercana. La búsqueda por texto tiene en cuenta todos los nombres y títulos originales, traducidos y alternativos.
+
+    /discover- A veces, es útil buscar películas y programas de televisión según filtros o valores definibles, como clasificaciones, 
+    certificaciones o fechas de lanzamiento. El método de descubrimiento lo hace fácil. Para ver algunos ejemplos de consultas y para 
+    tener una idea de las cosas que puede hacer con Discover, eche un vistazo aquí .
+
+    /find- La última forma, pero aún muy útil, de encontrar datos es con ID externos existentes. Por ejemplo, si conoce el ID de IMDB de 
+    una película, un programa de televisión o una persona, puede ingresar ese valor en este método y le devolveremos todo lo que coincida.
+    Esto puede ser muy útil cuando tiene una herramienta existente y está agregando nuestro servicio a la mezcla.
+
+General Features:
+    Top rated movies
+    Upcoming movies
+    Now playing movies
+    Popular movies
+    Popular TV shows
+    Top rated TV shows
+    On the air TV shows
+    Airing today TV shows
+    Popular people
