@@ -50,9 +50,9 @@ const Nav = ({
             </button>
             <button
               className="btn btn-primary categoria-items"
-              onClick={() => setCategoria("infantiles")}
+              onClick={() => setCategoria("dramas")}
             >
-              Infantiles
+              Dramas
             </button>
             <button
               className="btn btn-primary categoria-items"

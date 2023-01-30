@@ -53,7 +53,7 @@ General Features:
       console.log(">>>>>>>>>asfdsefs>>>", categoria);
       break;
 
-    case "infantiles":
+    case "dramas":
       setCategoria(
         "/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc"
       );

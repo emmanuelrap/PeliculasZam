@@ -9,7 +9,6 @@ export function ContextMovieCard(cat) {
   const [path, SetPath] = useState([
     "/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc",
   ]);
-  console.log("CONTENX MOVIE", cat.cat);
 
   //Renderiza el contenedor de las peliculas cada vez que le mandan un prop de categoria diferente
   useEffect(() => {
@@ -22,9 +21,9 @@ export function ContextMovieCard(cat) {
         });
         break;
 
-      case "infantiles":
+      case "dramas":
         get(
-          "/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc"
+          "/discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=10"
         ).then((data) => {
           SetMovies(data.results);
         });
