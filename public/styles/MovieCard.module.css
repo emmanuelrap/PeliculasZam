@@ -1,16 +1,16 @@
 .movieCard {
   list-style: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   transition: 0.5s;
 }
 .movieCard:hover {
   opacity: 0.3;
-  transform: translateY(-20px);
+  transform: translateY(-15px);
   transition: 0.5;
 }
 .movieImage {
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .title {
   color: white;
@@ -19,5 +19,16 @@
   .movieImage {
     width: 100%;
     height: auto;
+  }
+  .movieCard {
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .movieCard:hover {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0;
   }
 }

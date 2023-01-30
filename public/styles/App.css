@@ -1,9 +1,12 @@
 .title {
   margin-top: 20px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #d55f9c;
   text-decoration: none;
+}
+.alinear-elementos-horizontalmente {
+  float: left;
 }
 
 .degradado-negro {

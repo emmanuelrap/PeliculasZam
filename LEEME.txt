@@ -30,3 +30,33 @@ General Features:
     On the air TV shows
     Airing today TV shows
     Popular people
+    ////////////////////
+
+
+     switch (cat) {
+    case "estrenos":
+      setCategoria(
+        "/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22"
+      );
+      console.log(">>>>>>>>>asfdsefs>>>", categoria);
+      break;
+
+    case "populares":
+      setCategoria("/discover/movie?sort_by=popularity.desc");
+      console.log(">>>>>>>>>asfdsefs>>>", categoria);
+      break;
+
+    case "adultos":
+      setCategoria(
+        "/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22"
+      );
+      console.log(">>>>>>>>>asfdsefs>>>", categoria);
+      break;
+
+    case "infantiles":
+      setCategoria(
+        "/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc"
+      );
+      console.log(">>>>>>>>>asfdsefs>>>", categoria);
+      break;
+  }
