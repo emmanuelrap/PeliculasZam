@@ -2,12 +2,23 @@ import React from "react";
 import "../../public/styles/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const Nav = ({ colorFondo, setColorFondo }) => {
+const Nav = ({
+  colorFondo,
+  setColorFondo,
+  nombreCategoria,
+  setNombreCategoria,
+}) => {
+  const [categoria, setCategoria] = useState("estrenos");
+
   return (
     <div>
-      {/* <h1>Peliculas Estreno</h1> */}
-      <div className="btn-group btn-group-toggle" data-toggle="buttons">
+      <br />
+      <div
+        className="btn-group btn-group-toggle alinear-izquierda"
+        data-toggle="buttons"
+      >
         <label
           className="btn btn-secondary active degradado-blanco"
           onClick={() => setColorFondo("degradado-blanco")}
@@ -27,9 +38,35 @@ const Nav = ({ colorFondo, setColorFondo }) => {
           obscuro
         </label>
       </div>
-      <div>
-        <Link to={"/categoria/" + "adultos"}>
-          <button>Adultos</button>
+
+      <div className="alinear-derecha">
+        <Link className="alinear-derecha" to={"/categoria/" + categoria}>
+          <div className="alinear-derecha">
+            <button
+              className="btn btn-primary categoria-items"
+              onClick={() => setCategoria("adultos")}
+            >
+              Adultos
+            </button>
+            <button
+              className="btn btn-primary categoria-items"
+              onClick={() => setCategoria("infantiles")}
+            >
+              Infantiles
+            </button>
+            <button
+              className="btn btn-primary categoria-items"
+              onClick={() => setCategoria("estrenos")}
+            >
+              Estrenos
+            </button>
+            <button
+              className="btn btn-primary categoria-items"
+              onClick={() => setCategoria("populares")}
+            >
+              Populares
+            </button>
+          </div>
         </Link>
       </div>
     </div>

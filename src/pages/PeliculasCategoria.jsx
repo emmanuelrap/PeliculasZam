@@ -9,10 +9,10 @@ import { useParams } from "react-router-dom";
 export function PeliculasCategoria() {
   const [colorFondo, setColorFondo] = useState(["degradado-negro"]);
   const { paramCategoria } = useParams();
+  console.log("Peliculas-Categoria", paramCategoria);
 
   return (
     <div className={colorFondo}>
-      <h1> Categoria</h1>
       <Nav colorFondo={colorFondo} setColorFondo={setColorFondo} />
       <ContextMovieCard cat={paramCategoria} />
       <Footer />

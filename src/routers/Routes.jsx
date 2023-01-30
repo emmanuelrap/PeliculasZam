@@ -9,7 +9,11 @@ export function MyRoutes() {
     <Router>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/categoria/:cat" element={<PeliculasCategoria />} />
+        <Route
+          exact
+          path="/categoria/:paramCategoria"
+          element={<PeliculasCategoria />}
+        />
         <Route exact path="/movie/:movieId" element={<MovieDetails />} />
         <Route exact path="/*" element={<ErrorPage />} />
       </Routes>

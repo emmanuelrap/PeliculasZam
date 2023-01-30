@@ -10,7 +10,6 @@ export function LandingPage() {
 
   return (
     <div className={colorFondo}>
-      {/* <h1>Peliculas Estreno</h1> */}
       <Nav colorFondo={colorFondo} setColorFondo={setColorFondo} />
       <ContextMovieCard />
       <Footer />
