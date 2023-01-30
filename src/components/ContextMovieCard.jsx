@@ -15,7 +15,7 @@ export function ContextMovieCard() {
   };
 
   const [movies, SetMovies] = useState([]);
-  const [path, SetPath] = useState([urlConsulta.r]);
+  const [path, SetPath] = useState([urlConsulta.estrenos]);
 
   useEffect(() => {
     get(path).then((data) => {

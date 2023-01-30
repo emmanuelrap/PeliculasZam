@@ -11,6 +11,7 @@ export function LandingPage() {
   return (
     <div className={color}>
       <header>
+        <br></br>
         <h1 className="title"> 🎬PELÍCULAS.ZAM </h1>
       </header>
       <nav>
