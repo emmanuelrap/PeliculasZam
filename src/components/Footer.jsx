@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <div>
       <hr></hr> <hr></hr>
-      <p>Ingeniero Desarrollador</p>
+      <h2>Ingeniero Desarrollador</h2>
       <p> Carlos Emmanuel Zambrano Cortez</p>
       <p>@Todos los derechos reservados</p>
     </div>
